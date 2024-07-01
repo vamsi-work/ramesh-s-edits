@@ -1,0 +1,31 @@
+/* Your existing CSS styles */
+
+.slider {
+    display: flex;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory;  /* Snap to each image */
+    -webkit-overflow-scrolling: touch;  /* Smooth scrolling on iOS */
+}
+
+.slider img {
+    flex: 0 0 auto;  /* Maintain image size */
+    width: 100%;  /* Ensure images fill container */
+    scroll-snap-align: start;  /* Snap each image to start of viewport */
+}
+
+.more-works {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.more-works:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles as needed */
